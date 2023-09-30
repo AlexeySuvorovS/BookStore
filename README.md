@@ -1,10 +1,10 @@
 # BookStore
 ## just a pet with web templates
 <br>
-users
-* add user
-* remove user
-* edit user
+users<br>
+* add user<br>
+* remove user<br>
+* edit user<br>
 <br>
-books
-* add book
+books<br>
+* add book<br>
