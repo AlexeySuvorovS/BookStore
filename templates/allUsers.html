@@ -1,0 +1,30 @@
+<html>
+    <head><title>Users list</title></head>
+    <body>
+        <h2>Users list</h2>
+        <table border="1" align="center">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Login</th>
+                    <th>Password</th>
+                    <th>Edit user</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{range .}}
+                <tr>
+                    <th>{{.Id}}</th>
+                    <th>{{.Name}}</th>
+                    <th>{{.Email}}</th>
+                    <th>{{.Login}}</th>
+                    <th>{{.Password}}</th>
+                    <th><a href="/editUser?id={{.Id}}">Edit user "{{.Name}}"</a></th>
+                </tr>
+                {{end}}
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <h2> Edit user</h2>
+        <form action="/editUserPOST" method="POST">
+            <label for="nameID">User ID</label><br>
+            <input type="text" id="IdID" name="id" value="{{.Id}}"><br>
+
+            <label for="nameID">User name</label><br>
+            <input type="text" id="nameID" name="name" value="{{.Name}}"><br>
+
+            <label for="mailID">Email</label><br>
+            <input type="text" id="emailID" name="email" value="{{.Email}}"><br>
+            
+            <label for="loginID">Login</label><br>
+            <input type="text" id="loginID" name="login" value="{{.Login}}"><br>
+            
+            <label for="pswID">Password</label><br>
+            <input type="text" id="pswID" name="psw" value="{{.Password}}"><br><br>
+
+            <button type="submit" value="Submit">Save changes</button>
+        </form>
+        {{template "footer"}}
+    </body>
+</html>

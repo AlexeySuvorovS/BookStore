@@ -1,0 +1,33 @@
+<html>
+    <header><title>Adding a user</title></header>
+    <body>
+        <h2> Adding a new user</h2>
+        {{if .Id}} 
+            User {{.Name}} was successfully added 
+            <table border="1" align="center">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Login</th>
+                        <th>Password</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>{{.Id}}</th>
+                        <th>{{.Name}}</th>
+                        <th>{{.Email}}</th>
+                        <th>{{.Login}}</th>
+                        <th>{{.Password}}</th>
+                    </tr>
+                </tbody>
+            </table>        
+            {{else}} 
+            error adding user {{.Name}}
+        {{end}}
+        <br>
+        {{template "footer"}}
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h2> Add a new user</h2>
+
+        <form action="/addUserPOST" method="POST">
+            <label for="nameID">User name</label><br>
+            <input type="text" id="nameID" name="name"><br>
+
+            <label for="mailID">Email</label><br>
+            <input type="text" id="emailID" name="email"><br>
+            
+            <label for="loginID">Login</label><br>
+            <input type="text" id="loginID" name="login"><br>
+            
+            <label for="pswID">Password</label><br>
+            <input type="text" id="pswID" name="psw"><br><br>
+
+            <button type="submit" value="Submit">Add new User</button>
+        </form>
+        {{template "footer"}}
+    </body>
+</html>
